@@ -5,29 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WaterApps</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f7f9fb; color: #333; }
-    h1 { color: #0066cc; }
-    .container { max-width: 700px; margin: auto; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f7f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #0066cc;
+      text-align: center;
+    }
+    h2 {
+      color: #004b99;
+      margin-top: 40px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .downloads {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
     a.button {
-      display: inline-block; background: #0078d7; color: white; padding: 10px 20px;
-      border-radius: 8px; text-decoration: none; margin-top: 10px;
+      display: inline-block;
+      background: #0078d7;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s;
     }
     a.button:hover { background: #005fa3; }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>💧 WaterApps</h1>
-    <p>A simple open tool for analyzing and optimizing water systems.</p>
+    <p>Simple open tools for analyzing and optimizing water systems.</p>
 
-    <h2>Download</h2>
-    <p><a href="https://github.com/Relkayam/WaterApps/releases" class="button">⬇️ Download</a></p>
+    <h2>Downloads</h2>
+    <div class="downloads">
+      <a href="https://github.com/Relkayam/WaterApps/releases/download/v1.0/BranchDesignTool.zip" class="button">
+        🧩 Download: Design & Analyze Your Branch Network
+      </a>
+      <a href="https://github.com/Relkayam/WaterApps/releases/download/v1.0/BranchOptimizer.zip" class="button">
+        ⚙️ Download: Optimize Your Branch Network
+      </a>
+    </div>
 
-    <h2>Support this project</h2>
-    <p>If you like this tool, you can <a href="https://buymeacoffee.com/relkayam" target="_blank">buy me a coffee ☕</a>.</p>
+    <h2>Support this Project</h2>
+    <p>If you like these tools, you can <a href="https://buymeacoffee.com/relkayam" target="_blank">buy me a coffee ☕</a>.</p>
 
     <h2>Contact</h2>
     <p><a href="mailto:roy.elkayam@mail.huji.ac.il">roy.elkayam@mail.huji.ac.il</a></p>
+
+    <div class="footer">
+      © 2025 WaterApps | Created by Roy Elkayam
+    </div>
   </div>
 </body>
 </html>
